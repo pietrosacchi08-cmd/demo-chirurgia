@@ -163,103 +163,7 @@
                LIVELLO BASE (SOTTO): PRIMA — Palpebra Appesantita & Borsa Perioculare
                =============================================================== -->
           <div class="absolute inset-0 w-full h-full flex items-center justify-center bg-gradient-to-b from-[#141419] via-[#0E0E12] to-[#09090B]">
-            <svg viewBox="0 0 800 500" class="w-full h-full object-contain" preserveAspectRatio="xMidYMid meet">
-              <defs>
-                <pattern id="gridEyeBefore" width="40" height="40" patternUnits="userSpaceOnUse">
-                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(248,248,250,0.035)" stroke-width="1"/>
-                </pattern>
-                <radialGradient id="irisBefore" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="#09090B"/>
-                  <stop offset="36%" stop-color="#1A1A22"/>
-                  <stop offset="78%" stop-color="#3F3F46"/>
-                  <stop offset="100%" stop-color="#18181B"/>
-                </radialGradient>
-              </defs>
-
-              <rect width="800" height="500" fill="url(#gridEyeBefore)"/>
-
-              <!-- Assi di riferimento antropometrico perioculare -->
-              <line x1="110" y1="245" x2="690" y2="245" stroke="rgba(248,248,250,0.12)" stroke-width="1" stroke-dasharray="5 5"/>
-              <line x1="395" y1="55" x2="395" y2="445" stroke="rgba(248,248,250,0.12)" stroke-width="1" stroke-dasharray="5 5"/>
-
-              <!-- Sopracciglio leggermente appesantito lateralmente -->
-              <path d="M 185 152 Q 335 108, 495 132 Q 575 148, 622 184"
-                    fill="none"
-                    stroke="rgba(248,248,250,0.45)"
-                    stroke-width="6"
-                    stroke-linecap="round" />
-              <path d="M 195 162 Q 340 120, 492 142 Q 568 156, 612 188"
-                    fill="none"
-                    stroke="rgba(248,248,250,0.20)"
-                    stroke-width="2"
-                    stroke-linecap="round" />
-
-              <!-- Plica cutanea superiore cadente (Dermatochalasis) che copre il solco palpebrale -->
-              <path d="M 218 205 Q 385 162, 568 214 Q 584 226, 564 232 Q 392 186, 224 218 Z"
-                    fill="rgba(248,248,250,0.06)" />
-              <path d="M 215 204 Q 390 158, 574 218"
-                    fill="none"
-                    stroke="rgba(248,248,250,0.75)"
-                    stroke-width="2.4"
-                    stroke-linecap="round" />
-              <!-- Seconda piega di lassità cutanea superiore -->
-              <path d="M 248 216 Q 405 182, 562 226"
-                    fill="none"
-                    stroke="rgba(248,248,250,0.42)"
-                    stroke-width="1.6"
-                    stroke-dasharray="4 3"
-                    stroke-linecap="round" />
-
-              <!-- Rima palpebrale superiore appesantita (apertura ridotta) -->
-              <path d="M 232 246 Q 395 196, 552 246"
-                    fill="none"
-                    stroke="rgba(248,248,250,0.82)"
-                    stroke-width="2.6"
-                    stroke-linecap="round" />
-
-              <!-- Iride e pupilla parzialmente coperte dalla palpebra cadente -->
-              <g>
-                <clipPath id="eyeOpeningBefore">
-                  <path d="M 232 246 Q 395 196, 552 246 Q 395 292, 232 246 Z" />
-                </clipPath>
-                <g clip-path="url(#eyeOpeningBefore)">
-                  <circle cx="395" cy="242" r="46" fill="url(#irisBefore)" stroke="rgba(248,248,250,0.35)" stroke-width="1.5"/>
-                  <circle cx="395" cy="242" r="19" fill="#09090B"/>
-                  <circle cx="381" cy="230" r="5" fill="rgba(248,248,250,0.45)"/>
-                </g>
-              </g>
-
-              <!-- Rima palpebrale inferiore -->
-              <path d="M 232 246 Q 395 292, 552 246"
-                    fill="none"
-                    stroke="rgba(248,248,250,0.65)"
-                    stroke-width="2"
-                    stroke-linecap="round" />
-
-              <!-- Borsa adiposa infraorbitaria e solco lacrimale marcato -->
-              <path d="M 242 276 Q 385 336, 534 282"
-                    fill="none"
-                    stroke="rgba(248,248,250,0.58)"
-                    stroke-width="2.2"
-                    stroke-linecap="round" />
-              <path d="M 258 294 Q 388 354, 516 302"
-                    fill="none"
-                    stroke="rgba(248,248,250,0.34)"
-                    stroke-width="1.6"
-                    stroke-dasharray="5 4"
-                    stroke-linecap="round" />
-
-              <!-- CALLOUT TECNICI PRIMA (Posizionati ai lati, zero sovrapposizione sull'occhio) -->
-              <circle cx="495" cy="192" r="4.5" fill="#121216" stroke="rgba(248,248,250,0.85)" stroke-width="1.6"/>
-              <polyline points="495,192 560,120 605,120" fill="none" stroke="rgba(248,248,250,0.45)" stroke-width="1.2"/>
-              <text x="612" y="117" fill="rgba(248,248,250,0.88)" font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="600">ECCESSO CUTANEO</text>
-              <text x="612" y="131" fill="rgba(161,161,170,0.85)" font-family="JetBrains Mono, monospace" font-size="9">Palpebra appesantita</text>
-
-              <circle cx="465" cy="316" r="4.5" fill="#121216" stroke="rgba(248,248,250,0.85)" stroke-width="1.6"/>
-              <polyline points="465,316 555,375 605,375" fill="none" stroke="rgba(248,248,250,0.45)" stroke-width="1.2"/>
-              <text x="612" y="372" fill="rgba(248,248,250,0.88)" font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="600">BORSA & SOLCO</text>
-              <text x="612" y="386" fill="rgba(161,161,170,0.85)" font-family="JetBrains Mono, monospace" font-size="9">Ombra infraorbitaria</text>
-            </svg>
+            <img src="img/hero-prima.png" alt="Primo piano macro della zona oculare prima della blefaroplastica soft: palpebra superiore appesantita e borsa perioculare" class="w-full h-full object-cover" loading="eager">
           </div>
 
           <!-- ===============================================================
@@ -270,106 +174,7 @@
             class="absolute inset-0 w-full h-full flex items-center justify-center bg-gradient-to-b from-[#17140E] via-[#100E0B] to-[#09090B]"
             style="clip-path: inset(0 0 0 100%);"
           >
-            <svg viewBox="0 0 800 500" class="w-full h-full object-contain" preserveAspectRatio="xMidYMid meet">
-              <defs>
-                <pattern id="gridEyeAfter" width="40" height="40" patternUnits="userSpaceOnUse">
-                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(200,169,106,0.07)" stroke-width="1"/>
-                </pattern>
-                <radialGradient id="glowEyeAfter" cx="49%" cy="48%" r="48%">
-                  <stop offset="0%" stop-color="rgba(200,169,106,0.22)"/>
-                  <stop offset="65%" stop-color="rgba(200,169,106,0.04)"/>
-                  <stop offset="100%" stop-color="rgba(9,9,11,0)"/>
-                </radialGradient>
-                <radialGradient id="irisAfter" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="#09090B"/>
-                  <stop offset="34%" stop-color="#292214"/>
-                  <stop offset="72%" stop-color="#C8A96A"/>
-                  <stop offset="100%" stop-color="#5C4924"/>
-                </radialGradient>
-                <linearGradient id="champagneLine" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="#F8F8FA"/>
-                  <stop offset="50%" stop-color="#DFC58E"/>
-                  <stop offset="100%" stop-color="#C8A96A"/>
-                </linearGradient>
-              </defs>
-
-              <rect width="800" height="500" fill="url(#gridEyeAfter)"/>
-              <circle cx="395" cy="242" r="235" fill="url(#glowEyeAfter)"/>
-
-              <!-- Cerchi aurei di proporzione perioculare (Approccio Soft) -->
-              <circle cx="395" cy="242" r="185" fill="none" stroke="rgba(200,169,106,0.20)" stroke-width="1"/>
-              <circle cx="395" cy="242" r="114" fill="none" stroke="rgba(200,169,106,0.30)" stroke-width="1" stroke-dasharray="6 4"/>
-
-              <!-- Assi di simmetria cantale (angolo esterno leggermente rialzato, naturale) -->
-              <line x1="110" y1="244" x2="690" y2="236" stroke="rgba(200,169,106,0.28)" stroke-width="1"/>
-              <line x1="395" y1="55" x2="395" y2="445" stroke="rgba(200,169,106,0.28)" stroke-width="1"/>
-
-              <!-- Arcata sopraccigliare distesa e naturale (nessun effetto "sorpreso") -->
-              <path d="M 185 146 Q 338 98, 498 122 Q 578 136, 626 168"
-                    fill="none"
-                    stroke="url(#champagneLine)"
-                    stroke-width="6"
-                    stroke-linecap="round" />
-
-              <!-- Piega palpebrale superiore netta, pulita e distesa -->
-              <path d="M 236 202 Q 395 154, 548 202"
-                    fill="none"
-                    stroke="#DFC58E"
-                    stroke-width="2.1"
-                    stroke-linecap="round" />
-
-              <!-- Rima palpebrale superiore aperta e luminosa -->
-              <path d="M 228 245 Q 395 178, 558 238"
-                    fill="none"
-                    stroke="url(#champagneLine)"
-                    stroke-width="2.8"
-                    stroke-linecap="round" />
-
-              <!-- Iride e pupilla luminose e ben visibili -->
-              <g>
-                <clipPath id="eyeOpeningAfter">
-                  <path d="M 228 245 Q 395 178, 558 238 Q 395 294, 228 245 Z" />
-                </clipPath>
-                <g clip-path="url(#eyeOpeningAfter)">
-                  <circle cx="395" cy="238" r="48" fill="url(#irisAfter)" stroke="#DFC58E" stroke-width="1.6"/>
-                  <circle cx="395" cy="238" r="18" fill="#09090B"/>
-                  <circle cx="380" cy="224" r="6" fill="#F8F8FA"/>
-                  <circle cx="408" cy="248" r="2.5" fill="rgba(248,248,250,0.65)"/>
-                </g>
-              </g>
-
-              <!-- Rima palpebrale inferiore tonica -->
-              <path d="M 228 245 Q 395 294, 558 238"
-                    fill="none"
-                    stroke="url(#champagneLine)"
-                    stroke-width="2.3"
-                    stroke-linecap="round" />
-
-              <!-- Contorno infraorbitario levigato e continuo (zero borse) -->
-              <path d="M 248 278 Q 395 314, 538 272"
-                    fill="none"
-                    stroke="rgba(200,169,106,0.45)"
-                    stroke-width="1.5"
-                    stroke-linecap="round" />
-
-              <!-- Punti luce di precisione micro-chirurgica -->
-              <circle cx="395" cy="180" r="4" fill="#F8F8FA" stroke="#C8A96A" stroke-width="2"/>
-              <circle cx="558" cy="238" r="4.5" fill="#F8F8FA" stroke="#C8A96A" stroke-width="2"/>
-              <circle cx="395" cy="296" r="4" fill="#C8A96A"/>
-
-              <!-- CALLOUT SINISTRA DOPO -->
-              <text x="68" y="182" fill="#C8A96A" font-family="JetBrains Mono, monospace" font-size="9.5" letter-spacing="1.1">SOLCO PULITO</text>
-              <text x="68" y="294" fill="#C8A96A" font-family="JetBrains Mono, monospace" font-size="9.5" letter-spacing="1.1">IDENTITÀ INTATTA</text>
-
-              <!-- CALLOUT DESTRA DOPO -->
-              <polyline points="488,184 560,120 605,120" fill="none" stroke="#C8A96A" stroke-width="1.2"/>
-              <text x="612" y="117" fill="#DFC58E" font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="600">PALPEBRA DISTESA</text>
-              <text x="612" y="131" fill="rgba(248,248,250,0.75)" font-family="JetBrains Mono, monospace" font-size="9">Incisione invisibile</text>
-
-              <polyline points="472,294 555,375 605,375" fill="none" stroke="#C8A96A" stroke-width="1.2"/>
-              <text x="612" y="372" fill="#DFC58E" font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="600">CONTORNO LEVIGATO</text>
-              <text x="612" y="386" fill="rgba(248,248,250,0.75)" font-family="JetBrains Mono, monospace" font-size="9">Sguardo fresco e naturale</text>
-            </svg>
+            <img src="img/hero-dopo.png" alt="Primo piano macro della zona oculare dopo la blefaroplastica soft: sguardo aperto, luminoso e naturale" class="w-full h-full object-cover" loading="eager">
           </div>
 
           <!-- ===============================================================
@@ -490,46 +295,7 @@
 
           <!-- Tavola Anatomica SVG 01: Blefaroplastica -->
           <div class="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-4 border border-champagne/30 bg-[#11100E] flex items-center justify-center">
-            <svg viewBox="0 0 640 360" class="w-full h-full object-contain group-hover:scale-[1.03] transition duration-700" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Tavola anatomica Blefaroplastica Superiore e Inferiore">
-              <defs>
-                <pattern id="cardGrid1" width="24" height="24" patternUnits="userSpaceOnUse">
-                  <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(212,175,55,0.08)" stroke-width="0.8"/>
-                </pattern>
-                <radialGradient id="eyeCardGlow" cx="50%" cy="50%" r="48%">
-                  <stop offset="0%" stop-color="rgba(212,175,55,0.18)"/>
-                  <stop offset="100%" stop-color="rgba(17,16,14,0)"/>
-                </radialGradient>
-                <radialGradient id="irisCardGrad" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="#11100E"/>
-                  <stop offset="38%" stop-color="#2A2212"/>
-                  <stop offset="76%" stop-color="#D4AF37"/>
-                  <stop offset="100%" stop-color="#5A4718"/>
-                </radialGradient>
-              </defs>
-              <rect width="640" height="360" fill="url(#cardGrid1)"/>
-              <circle cx="320" cy="180" r="165" fill="url(#eyeCardGlow)"/>
-              <line x1="90" y1="184" x2="550" y2="178" stroke="rgba(212,175,55,0.24)" stroke-width="0.9" stroke-dasharray="4 4"/>
-              <line x1="320" y1="36" x2="320" y2="324" stroke="rgba(212,175,55,0.24)" stroke-width="0.9" stroke-dasharray="4 4"/>
-              <path d="M 155 112 Q 275 74, 405 92 Q 468 104, 505 128" fill="none" stroke="#F4F1EA" stroke-width="4.2" stroke-linecap="round"/>
-              <path d="M 192 152 Q 320 116, 444 152" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M 186 184 Q 320 132, 452 178" fill="none" stroke="#F4F1EA" stroke-width="2.2" stroke-linecap="round"/>
-              <clipPath id="cardEyeClip">
-                <path d="M 186 184 Q 320 132, 452 178 Q 320 222, 186 184 Z"/>
-              </clipPath>
-              <g clip-path="url(#cardEyeClip)">
-                <circle cx="320" cy="178" r="36" fill="url(#irisCardGrad)" stroke="#D4AF37" stroke-width="1.3"/>
-                <circle cx="320" cy="178" r="14" fill="#11100E"/>
-                <circle cx="309" cy="168" r="4.5" fill="#F4F1EA"/>
-              </g>
-              <path d="M 186 184 Q 320 222, 452 178" fill="none" stroke="#F4F1EA" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M 202 212 Q 320 242, 438 208" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="5 3" stroke-linecap="round"/>
-              <circle cx="240" cy="96" r="3" fill="#D4AF37"/>
-              <polyline points="240,96 205,64 176,64" fill="none" stroke="rgba(212,175,55,0.65)" stroke-width="1"/>
-              <text x="170" y="67" text-anchor="end" fill="#D4AF37" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="600">PALPEBRA DISTESA</text>
-              <circle cx="368" cy="226" r="3" fill="#D4AF37"/>
-              <polyline points="368,226 408,266 442,266" fill="none" stroke="rgba(212,175,55,0.65)" stroke-width="1"/>
-              <text x="448" y="269" text-anchor="start" fill="#F4F1EA" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="600">SOLCO LEVIGATO</text>
-            </svg>
+            <img src="img/card-01-blefaroplastica.png" alt="Zona oculare — Blefaroplastica Superiore e Inferiore" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" role="img" aria-label="Tavola anatomica Blefaroplastica Superiore e Inferiore" loading="lazy">
           </div>
 
           <h3 class="font-serif text-2xl font-medium text-alabaster mb-2 group-hover:text-champagneSoft transition">
@@ -568,36 +334,7 @@
 
           <!-- Tavola Anatomica SVG 02: Chirurgia del Seno -->
           <div class="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-4 border border-champagne/30 bg-[#11100E] flex items-center justify-center">
-            <svg viewBox="0 0 640 360" class="w-full h-full object-contain group-hover:scale-[1.03] transition duration-700" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Tavola anatomica Mastoplastica Additiva Proporzionata">
-              <defs>
-                <pattern id="cardGrid2" width="24" height="24" patternUnits="userSpaceOnUse">
-                  <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(212,175,55,0.08)" stroke-width="0.8"/>
-                </pattern>
-                <radialGradient id="breastGlow" cx="50%" cy="50%" r="46%">
-                  <stop offset="0%" stop-color="rgba(212,175,55,0.16)"/>
-                  <stop offset="100%" stop-color="rgba(17,16,14,0)"/>
-                </radialGradient>
-              </defs>
-              <rect width="640" height="360" fill="url(#cardGrid2)"/>
-              <circle cx="320" cy="180" r="155" fill="url(#breastGlow)"/>
-              <line x1="320" y1="30" x2="320" y2="330" stroke="#D4AF37" stroke-width="1" stroke-dasharray="5 4"/>
-              <line x1="170" y1="184" x2="470" y2="184" stroke="rgba(212,175,55,0.35)" stroke-width="0.9" stroke-dasharray="3 3"/>
-              <!-- Spalle e torace superiore -->
-              <path d="M 190 78 Q 238 92, 260 132 Q 266 176, 258 232" fill="none" stroke="#F4F1EA" stroke-width="2" stroke-linecap="round"/>
-              <path d="M 450 78 Q 402 92, 380 132 Q 374 176, 382 232" fill="none" stroke="#F4F1EA" stroke-width="2" stroke-linecap="round"/>
-              <path d="M 232 90 Q 288 106, 320 100 Q 352 106, 408 90" fill="none" stroke="rgba(244,241,234,0.5)" stroke-width="1.3" stroke-linecap="round"/>
-              <!-- Curve anatomiche naturali del seno -->
-              <path d="M 262 154 Q 248 206, 282 222 Q 312 226, 315 184" fill="none" stroke="#D4AF37" stroke-width="2.4" stroke-linecap="round"/>
-              <path d="M 378 154 Q 392 206, 358 222 Q 328 226, 325 184" fill="none" stroke="#D4AF37" stroke-width="2.4" stroke-linecap="round"/>
-              <circle cx="285" cy="186" r="34" fill="none" stroke="rgba(212,175,55,0.38)" stroke-width="1" stroke-dasharray="3 3"/>
-              <circle cx="355" cy="186" r="34" fill="none" stroke="rgba(212,175,55,0.38)" stroke-width="1" stroke-dasharray="3 3"/>
-              <circle cx="285" cy="186" r="3" fill="#F4F1EA"/>
-              <circle cx="355" cy="186" r="3" fill="#F4F1EA"/>
-              <polyline points="285,152 236,118 190,118" fill="none" stroke="rgba(212,175,55,0.65)" stroke-width="1"/>
-              <text x="184" y="121" text-anchor="end" fill="#D4AF37" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="600">SIMMETRIA AUREA</text>
-              <polyline points="376,214 422,250 458,250" fill="none" stroke="rgba(212,175,55,0.65)" stroke-width="1"/>
-              <text x="464" y="253" text-anchor="start" fill="#F4F1EA" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="600">PROFILO NATURALE</text>
-            </svg>
+            <img src="img/card-02-mastoplastica.png" alt="Silhouette elegante — Mastoplastica Additiva Proporzionata" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" role="img" aria-label="Tavola anatomica Mastoplastica Additiva Proporzionata" loading="lazy">
           </div>
 
           <h3 class="font-serif text-2xl font-medium text-alabaster mb-2 group-hover:text-champagneSoft transition">
@@ -636,35 +373,7 @@
 
           <!-- Tavola Anatomica SVG 03: Liposcultura HD -->
           <div class="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-4 border border-champagne/30 bg-[#11100E] flex items-center justify-center">
-            <svg viewBox="0 0 640 360" class="w-full h-full object-contain group-hover:scale-[1.03] transition duration-700" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Tavola anatomica Liposcultura HD e Rimodellamento Corporeo">
-              <defs>
-                <pattern id="cardGrid3" width="24" height="24" patternUnits="userSpaceOnUse">
-                  <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(212,175,55,0.08)" stroke-width="0.8"/>
-                </pattern>
-              </defs>
-              <rect width="640" height="360" fill="url(#cardGrid3)"/>
-              <line x1="320" y1="28" x2="320" y2="332" stroke="rgba(212,175,55,0.35)" stroke-width="1" stroke-dasharray="5 4"/>
-              <line x1="185" y1="176" x2="455" y2="176" stroke="rgba(212,175,55,0.35)" stroke-width="0.9" stroke-dasharray="3 3"/>
-              <!-- Silhouette punto vita e fianchi scolpiti -->
-              <path d="M 238 48 Q 252 114, 272 176 Q 242 238, 232 316" fill="none" stroke="#F4F1EA" stroke-width="2.2" stroke-linecap="round"/>
-              <path d="M 402 48 Q 388 114, 368 176 Q 398 238, 408 316" fill="none" stroke="#F4F1EA" stroke-width="2.2" stroke-linecap="round"/>
-              <!-- Linee topografiche di contouring HD -->
-              <path d="M 254 88 Q 268 142, 282 176 Q 258 228, 248 292" fill="none" stroke="#D4AF37" stroke-width="1.6" stroke-dasharray="4 3"/>
-              <path d="M 386 88 Q 372 142, 358 176 Q 382 228, 392 292" fill="none" stroke="#D4AF37" stroke-width="1.6" stroke-dasharray="4 3"/>
-              <!-- Frecce di ridefinizione punto vita -->
-              <g stroke="#D4AF37" stroke-width="1.4" fill="none">
-                <line x1="226" y1="176" x2="264" y2="176"/>
-                <polyline points="258,172 264,176 258,180"/>
-                <line x1="414" y1="176" x2="376" y2="176"/>
-                <polyline points="382,172 376,176 382,180"/>
-              </g>
-              <circle cx="272" cy="176" r="3.5" fill="#D4AF37"/>
-              <circle cx="368" cy="176" r="3.5" fill="#D4AF37"/>
-              <polyline points="264,132 214,104 182,104" fill="none" stroke="rgba(212,175,55,0.65)" stroke-width="1"/>
-              <text x="176" y="107" text-anchor="end" fill="#D4AF37" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="600">LINEA VITA HD</text>
-              <polyline points="384,226 426,254 458,254" fill="none" stroke="rgba(212,175,55,0.65)" stroke-width="1"/>
-              <text x="464" y="257" text-anchor="start" fill="#F4F1EA" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="600">ARMONIA FIANCHI</text>
-            </svg>
+            <img src="img/card-03-liposcultura.png" alt="Contorno corporeo — Liposcultura HD e Rimodellamento Corporeo" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" role="img" aria-label="Tavola anatomica Liposcultura HD e Rimodellamento Corporeo" loading="lazy">
           </div>
 
           <h3 class="font-serif text-2xl font-medium text-alabaster mb-2 group-hover:text-champagneSoft transition">
