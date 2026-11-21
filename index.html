@@ -46,7 +46,7 @@
       color: #F8F8FA;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
-      padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+      padding-bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px));
     }
 
     @media (min-width: 768px) {
@@ -56,7 +56,7 @@
     }
 
     .luxury-glass {
-      background: rgba(18, 18, 22, 0.82);
+      background: rgba(18, 18, 22, 0.84);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
       border: 1px solid rgba(200, 169, 106, 0.28);
@@ -68,7 +68,6 @@
       -webkit-text-fill-color: transparent;
     }
 
-    /* Frame Prima/Dopo unidirezionale guidato solo dallo scroll */
     #ba-frame {
       user-select: none;
       -webkit-user-select: none;
@@ -78,17 +77,17 @@
       will-change: clip-path;
     }
 
-    #laser-divider {
+    #divider-line {
       will-change: left;
     }
 
     .sticky-mobile-bar {
-      padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+      padding-bottom: calc(0.65rem + env(safe-area-inset-bottom, 0px));
     }
 
     @keyframes floatDown {
-      0%, 100% { transform: translateY(0); opacity: 0.6; }
-      50% { transform: translateY(5px); opacity: 1; }
+      0%, 100% { transform: translateY(0); opacity: 0.65; }
+      50% { transform: translateY(4px); opacity: 1; }
     }
     .animate-float-down {
       animation: floatDown 2s ease-in-out infinite;
@@ -124,73 +123,61 @@
   </header>
 
   <!-- =====================================================================
-       HERO SCROLLYTELLING PRIMA / DOPO: BLEFAROPLASTICA SOFT (N°1 A MILANO)
+       HERO SCROLLYTELLING PRIMA / DOPO: BLEFAROPLASTICA SOFT
        ===================================================================== -->
-  <section id="scrolly-container" class="relative h-[250vh] w-full bg-obsidian">
+  <section id="scrolly-container" class="relative h-[280vh] w-full bg-obsidian">
     <div class="sticky top-0 h-screen w-full flex flex-col items-center justify-between pt-16 pb-6 sm:py-20 px-4 sm:px-8 overflow-hidden">
 
-      <!-- Bagliore ambientale radiale -->
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_46%,rgba(200,169,106,0.09)_0%,rgba(9,9,11,0.97)_74%)] pointer-events-none"></div>
 
-      <!-- Intestazione Superiore -->
       <div class="relative z-20 text-center max-w-2xl mx-auto mt-1">
         <p class="text-[9px] sm:text-xs uppercase tracking-[0.24em] text-champagne font-semibold mb-1">
-          Intervento N°1 a Milano · Uomo & Donna · Recupero Rapido
+          Blefaroplastica Soft · Uomo & Donna · Recupero Rapido
         </p>
         <h1 class="font-serif text-2xl sm:text-4xl md:text-5xl font-medium tracking-tight text-alabaster leading-tight">
           Blefaroplastica Soft: <span class="italic gold-text font-normal">Sguardo Riposato, Identità Intatta</span>
         </h1>
       </div>
 
-      <!-- FRAME MACRO OCCHIO & AREA PERIOCULARE (Zero Overlay Interni) -->
       <div class="relative z-20 w-full max-w-lg md:max-w-3xl my-auto">
 
-        <!-- Telemetria Superiore Esterna -->
         <div class="flex items-center justify-between text-[10px] sm:text-xs font-mono tracking-wider mb-1.5 px-1">
           <div class="flex items-center gap-2 truncate pr-2">
-            <span id="status-dot" class="w-2 h-2 rounded-full bg-warmGray/50 shrink-0 transition-colors duration-300"></span>
-            <span id="telemetry-status" class="text-warmGray uppercase truncate">ANALISI PERIOCULARE PRE-OP</span>
+            <span id="status-dot" class="w-2 h-2 rounded-full bg-warmGray/60 shrink-0 transition-colors duration-300"></span>
+            <span id="telemetry-status" class="text-warmGray uppercase truncate">PRE-TRATTAMENTO · AREA PERIOCULARE</span>
           </div>
           <span id="telemetry-percent" class="text-champagne font-semibold shrink-0">0%</span>
         </div>
 
-        <!-- Finestra Macro Anatomica (100% libera da overlay) -->
         <div
           id="ba-frame"
           class="relative w-full h-[42vh] sm:h-[48vh] md:h-[52vh] rounded-3xl overflow-hidden border border-champagne/30 shadow-[0_25px_70px_rgba(0,0,0,0.88)] bg-obsidianSurface"
         >
-          <!-- ===============================================================
-               LIVELLO BASE (SOTTO): PRIMA — Palpebra Appesantita & Borsa Perioculare
-               =============================================================== -->
+          <!-- PRIMA -->
           <div class="absolute inset-0 w-full h-full flex items-center justify-center bg-gradient-to-b from-[#141419] via-[#0E0E12] to-[#09090B]">
-            <img src="img/hero-prima.png" alt="Primo piano macro della zona oculare prima della blefaroplastica soft: palpebra superiore appesantita e borsa perioculare" class="w-full h-full object-cover" loading="eager">
+            <img src="img/hero-prima.png" alt="Primo piano della zona perioculare prima del trattamento: palpebra superiore appesantita e lieve borsa inferiore" class="w-full h-full object-cover" loading="eager">
           </div>
 
-          <!-- ===============================================================
-               LIVELLO SUPERIORE (RIVELATO): DOPO — Sguardo Aperto, Luminoso e Naturale
-               =============================================================== -->
+          <!-- DOPO -->
           <div
             id="after-layer"
             class="absolute inset-0 w-full h-full flex items-center justify-center bg-gradient-to-b from-[#17140E] via-[#100E0B] to-[#09090B]"
             style="clip-path: inset(0 0 0 100%);"
           >
-            <img src="img/hero-dopo.png" alt="Primo piano macro della zona oculare dopo la blefaroplastica soft: sguardo aperto, luminoso e naturale" class="w-full h-full object-cover" loading="eager">
+            <img src="img/hero-dopo.png" alt="Primo piano della zona perioculare dopo il trattamento: sguardo disteso e naturale" class="w-full h-full object-cover" loading="eager">
           </div>
 
-          <!-- ===============================================================
-               RAGGIO LASER DORATO DI SCANSIONE (Solo Visivo, Zero Frecce)
-               =============================================================== -->
+          <!-- DIVISORE CONTINUO -->
           <div
-            id="laser-divider"
-            class="absolute top-0 bottom-0 w-[2px] bg-gradient-to-b from-champagneSoft via-champagne to-champagneSoft shadow-[0_0_24px_4px_rgba(200,169,106,0.9)] z-30 pointer-events-none"
+            id="divider-line"
+            class="absolute top-0 bottom-0 w-[2px] bg-gradient-to-b from-champagneSoft via-champagne to-champagneSoft shadow-[0_0_20px_2px_rgba(200,169,106,0.75)] z-30 pointer-events-none transition-opacity duration-300"
             style="left: 100%;"
           >
-            <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-alabaster border-2 border-champagne shadow-[0_0_16px_rgba(200,169,106,1)]"></div>
+            <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-alabaster border-2 border-champagne shadow-[0_0_12px_rgba(200,169,106,0.9)]"></div>
           </div>
-
         </div>
 
-        <!-- BARRA DI STATO ESTERNA SOTTO IL RIQUADRO (Zero sovrapposizioni) -->
+        <!-- BARRA DI STATO ESTERNA -->
         <div id="state-banner" class="mt-2.5 luxury-glass rounded-2xl px-3.5 py-2.5 flex items-center justify-between gap-2 border border-champagne/25 transition-all duration-300">
           <div class="flex items-center gap-2 min-w-0">
             <span id="banner-tag" class="shrink-0 text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-white/10 text-alabaster">
@@ -205,7 +192,7 @@
           </span>
         </div>
 
-        <!-- Barra di avanzamento sottile + Cue Scroll -->
+        <!-- Avanzamento + Cue Scroll -->
         <div class="mt-2 px-1">
           <div class="w-full h-[2px] bg-white/10 rounded-full overflow-hidden">
             <div id="progress-bar-fill" class="h-full bg-gradient-to-r from-champagne to-champagneSoft w-0 transition-all duration-75"></div>
@@ -213,7 +200,7 @@
           <div class="flex items-center justify-between mt-1.5 text-[11px] text-warmGray">
             <span class="font-mono text-[10px] text-champagne/85">SOFT BLEPHAROPLASTY · MILANO</span>
             <span id="scroll-cue-text" class="flex items-center gap-1.5 text-champagneSoft font-medium animate-float-down">
-              <span>Scorri per rivelare lo sguardo riposato</span>
+              <span>Scorri per vedere il confronto</span>
               <span>↓</span>
             </span>
           </div>
@@ -224,22 +211,22 @@
   </section>
 
   <!-- =====================================================================
-       SEZIONE POST-SCANSIONE: POSIZIONAMENTO SOFT + CTA 1-TAP IMMEDIATO
+       SEZIONE POSIZIONAMENTO SOFT + CTA 1-TAP
        ===================================================================== -->
   <section id="conversion-anchor" class="relative py-16 sm:py-24 px-5 sm:px-8 max-w-5xl mx-auto border-t border-champagne/20">
     <div class="text-center max-w-3xl mx-auto">
       <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-champagne/10 border border-champagne/30 text-champagne text-[11px] uppercase tracking-[0.22em] font-semibold mb-6">
         <i class="fa-solid fa-shield-halved text-[10px]"></i>
-        <span>Tendenza Milano · Naturalezza & Approccio Soft</span>
+        <span>Milano · Naturalezza & Approccio Soft</span>
       </div>
 
       <h2 class="font-serif text-4xl sm:text-6xl font-medium text-alabaster leading-[1.08] tracking-tight mb-6">
-        Nessun effetto artificiale. <br>
-        <span class="italic gold-text font-normal">Solo la versione più fresca di te.</span>
+        Risultati misurati. <br>
+        <span class="italic gold-text font-normal">Senza stravolgere i tratti.</span>
       </h2>
 
       <p class="text-warmGray text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-9">
-        A Milano la nuova chirurgia plastica abbandona gli eccessi: privilegiamo interventi mini-invasivi con <strong class="text-alabaster font-medium">incisioni invisibili e tempi di recupero rapidissimi</strong>, per valorizzare i lineamenti senza mai alterare l’espressività naturale.
+        Un approccio conservativo privilegia <strong class="text-alabaster font-medium">precisione anatomica, cicatrici discrete e tempi di recupero contenuti</strong>, così il paziente ottiene un aspetto più riposato mantenendo la propria identità.
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5">
@@ -257,52 +244,49 @@
           href="#interventi-milano"
           class="w-full sm:w-auto luxury-glass hover:border-champagne/60 text-alabaster py-4 px-7 rounded-2xl text-sm font-medium transition"
         >
-          Esplora i 6 Interventi Top
+          Esplora i 6 Percorsi
         </a>
       </div>
     </div>
   </section>
 
   <!-- =====================================================================
-       SEZIONE INTERVENTI D'ÉLITE: 6 CARD SINGOLE SEPARATE (1 SERVIZIO = 1 CARD)
+       SEZIONE INTERVENTI: 6 CARD SINGOLE
        ===================================================================== -->
   <section id="interventi-milano" class="py-12 sm:py-20 px-5 sm:px-8 max-w-6xl mx-auto">
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
       <div>
-        <span class="text-[11px] uppercase tracking-[0.25em] text-champagne font-semibold">I 6 Protocolli Più Richiesti a Milano</span>
+        <span class="text-[11px] uppercase tracking-[0.25em] text-champagne font-semibold">Percorsi Principali</span>
         <h2 class="font-serif text-3xl sm:text-5xl font-medium text-alabaster mt-2">
-          Interventi d'Élite & Approccio Soft
+          Interventi & Trattamenti Soft
         </h2>
       </div>
       <p class="text-warmGray text-xs sm:text-sm max-w-md">
-        Ogni intervento è isolato in un percorso dedicato. Seleziona il trattamento che ti interessa e avvia subito la chat su WhatsApp in 1-Tap per ricevere informazioni riservate.
+        Ogni percorso ha un accesso diretto su WhatsApp in 1-Tap per richiedere informazioni e disponibilità senza moduli dispersivi.
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      <!-- =================================================================
-           CARD 01: BLEFAROPLASTICA SUPERIORE & INFERIORE
-           ================================================================= -->
+      <!-- CARD 01 -->
       <article class="luxury-glass rounded-3xl p-6 flex flex-col justify-between group hover:border-champagne/60 transition">
         <div>
           <div class="flex items-center justify-between gap-2 mb-3">
-            <span class="font-mono text-[11px] text-champagne font-semibold">01 · N°1 A MILANO</span>
+            <span class="font-mono text-[11px] text-champagne font-semibold">01 · REGIONE OCULARE</span>
             <span class="bg-champagne/15 border border-champagne/35 text-champagneSoft text-[10px] uppercase tracking-wider font-semibold px-2.5 py-0.5 rounded-full">
               Uomo & Donna
             </span>
           </div>
 
-          <!-- Tavola Anatomica SVG 01: Blefaroplastica -->
           <div class="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-4 border border-champagne/30 bg-[#11100E] flex items-center justify-center">
-            <img src="img/card-01-blefaroplastica.png" alt="Zona oculare — Blefaroplastica Superiore e Inferiore" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" role="img" aria-label="Tavola anatomica Blefaroplastica Superiore e Inferiore" loading="lazy">
+            <img src="img/card-01-blefaroplastica.png" alt="Zona oculare — Blefaroplastica Superiore e Inferiore" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" loading="lazy">
           </div>
 
           <h3 class="font-serif text-2xl font-medium text-alabaster mb-2 group-hover:text-champagneSoft transition">
             Blefaroplastica Superiore & Inferiore
           </h3>
           <p class="text-warmGray text-sm leading-relaxed mb-5">
-            Rimuove l’eccesso cutaneo palpebrale e le borse infraorbitarie con micro-incisioni invisibili nella piega naturale. Sguardo subito più fresco e riposato, con rientro sociale in 4–5 giorni.
+            Correzione mirata dell’eccesso cutaneo palpebrale e delle borse infraorbitarie con incisioni discrete nella piega naturale e recupero rapido.
           </p>
         </div>
 
@@ -320,28 +304,25 @@
         </div>
       </article>
 
-      <!-- =================================================================
-           CARD 02: CHIRURGIA DEL SENO (MASTOPLASTICA PROPORZIONATA)
-           ================================================================= -->
+      <!-- CARD 02 -->
       <article class="luxury-glass rounded-3xl p-6 flex flex-col justify-between group hover:border-champagne/60 transition">
         <div>
           <div class="flex items-center justify-between gap-2 mb-3">
             <span class="font-mono text-[11px] text-champagne font-semibold">02 · ARMONIA SENO</span>
             <span class="bg-white/5 border border-white/15 text-warmGray text-[10px] uppercase tracking-wider font-medium px-2.5 py-0.5 rounded-full">
-              Volumi Naturali
+              Proporzioni Naturali
             </span>
           </div>
 
-          <!-- Tavola Anatomica SVG 02: Chirurgia del Seno -->
           <div class="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-4 border border-champagne/30 bg-[#11100E] flex items-center justify-center">
-            <img src="img/card-02-mastoplastica.png" alt="Silhouette elegante — Mastoplastica Additiva Proporzionata" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" role="img" aria-label="Tavola anatomica Mastoplastica Additiva Proporzionata" loading="lazy">
+            <img src="img/card-02-mastoplastica.png" alt="Silhouette — Mastoplastica Additiva Proporzionata" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" loading="lazy">
           </div>
 
           <h3 class="font-serif text-2xl font-medium text-alabaster mb-2 group-hover:text-champagneSoft transition">
             Chirurgia del Seno · Mastoplastica Soft
           </h3>
           <p class="text-warmGray text-sm leading-relaxed mb-5">
-            Protesi ergonomiche di ultima generazione o lipofilling mammario studiati sulle proporzioni del torace. Risultato morbido e naturale al tatto, senza eccessi visivi e con recupero rapido.
+            Valutazione anatomica su misura con protesi selezionate o lipofilling per un volume armonioso e coerente con la struttura corporea.
           </p>
         </div>
 
@@ -359,74 +340,68 @@
         </div>
       </article>
 
-      <!-- =================================================================
-           CARD 03: LIPOSCULTURA HD & RIMODELLAMENTO CORPOREO
-           ================================================================= -->
+      <!-- CARD 03 -->
       <article class="luxury-glass rounded-3xl p-6 flex flex-col justify-between group hover:border-champagne/60 transition">
         <div>
           <div class="flex items-center justify-between gap-2 mb-3">
-            <span class="font-mono text-[11px] text-champagne font-semibold">03 · BODY CONTOURING</span>
+            <span class="font-mono text-[11px] text-champagne font-semibold">03 · PROFILO CORPOREO</span>
             <span class="bg-white/5 border border-white/15 text-warmGray text-[10px] uppercase tracking-wider font-medium px-2.5 py-0.5 rounded-full">
-              Alta Definizione
+              Definizione Mirata
             </span>
           </div>
 
-          <!-- Tavola Anatomica SVG 03: Liposcultura HD -->
           <div class="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-4 border border-champagne/30 bg-[#11100E] flex items-center justify-center">
-            <img src="img/card-03-liposcultura.png" alt="Contorno corporeo — Liposcultura HD e Rimodellamento Corporeo" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" role="img" aria-label="Tavola anatomica Liposcultura HD e Rimodellamento Corporeo" loading="lazy">
+            <img src="img/card-03-liposcultura.png" alt="Contorno corporeo — Liposcultura e Rimodellamento Corporeo" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" loading="lazy">
           </div>
 
           <h3 class="font-serif text-2xl font-medium text-alabaster mb-2 group-hover:text-champagneSoft transition">
-            Liposcultura HD & Rimodellamento
+            Liposcultura & Rimodellamento
           </h3>
           <p class="text-warmGray text-sm leading-relaxed mb-5">
-            Micro-cannule atraumatiche per ridefinire addome, fianchi e interno coscia con retrazione cutanea controllata. Silhouette scolpita senza segni visibili e ripresa delle attività in pochi giorni.
+            Trattamento mirato dei depositi localizzati su addome, fianchi e arti per rifinire i contorni con attenzione alla qualità cutanea.
           </p>
         </div>
 
         <div class="pt-4 border-t border-white/10">
           <a
-            href="https://wa.me/390200000000?text=Buongiorno%20Atelier%20Milano%2C%20vorrei%20informazioni%20sulla%20Liposcultura%20HD%20e%20Rimodellamento%20Corporeo."
-            onclick="return handleWhatsAppClick(event, 'Liposcultura HD & Rimodellamento', 'Buongiorno Atelier Milano, vorrei informazioni sulla Liposcultura HD e Rimodellamento Corporeo.')"
+            href="https://wa.me/390200000000?text=Buongiorno%20Atelier%20Milano%2C%20vorrei%20informazioni%20sulla%20Liposcultura%20e%20Rimodellamento%20Corporeo."
+            onclick="return handleWhatsAppClick(event, 'Liposcultura & Rimodellamento', 'Buongiorno Atelier Milano, vorrei informazioni sulla Liposcultura e Rimodellamento Corporeo.')"
             target="_blank"
             rel="noopener noreferrer"
             class="w-full bg-waDark hover:bg-[#13877a] text-alabaster border border-waBright/40 py-3 px-4 rounded-2xl font-semibold text-xs flex items-center justify-center gap-2 transition active:scale-95"
           >
             <i class="fa-brands fa-whatsapp text-base text-waBright"></i>
-            <span>Info Liposcultura HD su WhatsApp (1-Tap)</span>
+            <span>Info Liposcultura su WhatsApp (1-Tap)</span>
           </a>
         </div>
       </article>
 
-      <!-- =================================================================
-           CARD 04: MINI-LIFTING ENDOSCOPICO & MUST TECHNIQUE
-           ================================================================= -->
+      <!-- CARD 04 -->
       <article class="luxury-glass rounded-3xl p-6 flex flex-col justify-between group hover:border-champagne/60 transition">
         <div>
           <div class="flex items-center justify-between gap-2 mb-3">
-            <span class="font-mono text-[11px] text-champagne font-semibold">04 · RINGIOVANIMENTO VOLTO</span>
+            <span class="font-mono text-[11px] text-champagne font-semibold">04 · TERZO MEDIO & MANDIBOLA</span>
             <span class="bg-white/5 border border-white/15 text-warmGray text-[10px] uppercase tracking-wider font-medium px-2.5 py-0.5 rounded-full">
-              MUST Technique
+              Accessi Discreti
             </span>
           </div>
 
-          <!-- Tavola Anatomica SVG 04: Mini-Lifting Endoscopico -->
           <div class="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-4 border border-champagne/30 bg-[#11100E] flex items-center justify-center">
-            <img src="img/card-04-lifting.png" alt="Zona mandibolare e collo — Mini-Lifting Endoscopico e MUST Technique" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" role="img" aria-label="Tavola anatomica Mini-Lifting Endoscopico e MUST Technique" loading="lazy">
+            <img src="img/card-04-lifting.png" alt="Zona mandibolare — Mini-Lifting e Ridefinizione del Volto" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" loading="lazy">
           </div>
 
           <h3 class="font-serif text-2xl font-medium text-alabaster mb-2 group-hover:text-champagneSoft transition">
-            Mini-Lifting Endoscopico · MUST
+            Mini-Lifting & Ridefinizione Volto
           </h3>
           <p class="text-warmGray text-sm leading-relaxed mb-5">
-            Riposiziona i tessuti del terzo medio e ridefinisce la linea mandibolare tramite micro-accessi nascosti. Zero pelle tirata e zero cicatrici visibili, con recupero sociale in circa 7 giorni.
+            Riposizionamento controllato dei piani superficiali e ridefinizione del profilo mandibolare senza effetto trazione eccessiva.
           </p>
         </div>
 
         <div class="pt-4 border-t border-white/10">
           <a
-            href="https://wa.me/390200000000?text=Buongiorno%20Atelier%20Milano%2C%20vorrei%20informazioni%20sul%20Mini-Lifting%20Endoscopico%20e%20MUST%20Technique."
-            onclick="return handleWhatsAppClick(event, 'Mini-Lifting Endoscopico · MUST Technique', 'Buongiorno Atelier Milano, vorrei informazioni sul Mini-Lifting Endoscopico e MUST Technique.')"
+            href="https://wa.me/390200000000?text=Buongiorno%20Atelier%20Milano%2C%20vorrei%20informazioni%20sul%20Mini-Lifting%20e%20ridefinizione%20del%20volto."
+            onclick="return handleWhatsAppClick(event, 'Mini-Lifting & Ridefinizione Volto', 'Buongiorno Atelier Milano, vorrei informazioni sul Mini-Lifting e ridefinizione del volto.')"
             target="_blank"
             rel="noopener noreferrer"
             class="w-full bg-waDark hover:bg-[#13877a] text-alabaster border border-waBright/40 py-3 px-4 rounded-2xl font-semibold text-xs flex items-center justify-center gap-2 transition active:scale-95"
@@ -437,28 +412,25 @@
         </div>
       </article>
 
-      <!-- =================================================================
-           CARD 05: RINOPLASTICA CONSERVATIVA & PROFILOPLASTICA
-           ================================================================= -->
+      <!-- CARD 05 -->
       <article class="luxury-glass rounded-3xl p-6 flex flex-col justify-between group hover:border-champagne/60 transition">
         <div>
           <div class="flex items-center justify-between gap-2 mb-3">
-            <span class="font-mono text-[11px] text-champagne font-semibold">05 · PRESERVATION RHINO</span>
+            <span class="font-mono text-[11px] text-champagne font-semibold">05 · ARMONIA NASALE</span>
             <span class="bg-white/5 border border-white/15 text-warmGray text-[10px] uppercase tracking-wider font-medium px-2.5 py-0.5 rounded-full">
-              Senza Tamponi
+              Approccio Conservativo
             </span>
           </div>
 
-          <!-- Tavola Anatomica SVG 05: Rinoplastica Conservativa -->
           <div class="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-4 border border-champagne/30 bg-[#11100E] flex items-center justify-center">
-            <img src="img/card-05-rinoplastica.png" alt="Profilo nasale raffinato — Rinoplastica Conservativa e Profiloplastica" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" role="img" aria-label="Tavola anatomica Rinoplastica Conservativa" loading="lazy">
+            <img src="img/card-05-rinoplastica.png" alt="Profilo nasale — Rinoplastica Conservativa e Profiloplastica" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" loading="lazy">
           </div>
 
           <h3 class="font-serif text-2xl font-medium text-alabaster mb-2 group-hover:text-champagneSoft transition">
             Rinoplastica Conservativa
           </h3>
           <p class="text-warmGray text-sm leading-relaxed mb-5">
-            Rimodella il dorso e la punta preservando le strutture cartilaginee naturali senza creare un naso "rifatto". Intervento indolore, senza tamponi nasali e con recupero rapido.
+            Rimodellamento del profilo nasale con preservazione delle strutture portanti e attenzione alla funzionalità respiratoria.
           </p>
         </div>
 
@@ -476,28 +448,25 @@
         </div>
       </article>
 
-      <!-- =================================================================
-           CARD 06: MEDICINA RIGENERATIVA & PROTOCOLLI ANTI-AGING SOFT
-           ================================================================= -->
+      <!-- CARD 06 -->
       <article class="luxury-glass rounded-3xl p-6 flex flex-col justify-between group hover:border-champagne/60 transition">
         <div>
           <div class="flex items-center justify-between gap-2 mb-3">
-            <span class="font-mono text-[11px] text-champagne font-semibold">06 · NO-BISTURI</span>
+            <span class="font-mono text-[11px] text-champagne font-semibold">06 · QUALITÀ CUTANEA</span>
             <span class="bg-white/5 border border-white/15 text-warmGray text-[10px] uppercase tracking-wider font-medium px-2.5 py-0.5 rounded-full">
-              Ritorno Immediato
+              Protocolli Soft
             </span>
           </div>
 
-          <!-- Tavola Anatomica SVG 06: Medicina Rigenerativa -->
           <div class="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-4 border border-champagne/30 bg-[#11100E] flex items-center justify-center">
-            <img src="img/card-06-rigenerativa.png" alt="Fiala di siero e micro-cannula su marmo scuro — Medicina Rigenerativa e Protocolli Anti-Aging Soft" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" role="img" aria-label="Tavola anatomica Medicina Rigenerativa e Biostimolazione" loading="lazy">
+            <img src="img/card-06-rigenerativa.png" alt="Trattamento cutaneo — Medicina Rigenerativa e Biostimolazione" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" loading="lazy">
           </div>
 
           <h3 class="font-serif text-2xl font-medium text-alabaster mb-2 group-hover:text-champagneSoft transition">
             Medicina Rigenerativa Soft
           </h3>
           <p class="text-warmGray text-sm leading-relaxed mb-5">
-            Biostimolazione cellulare profonda e polinucleotidi puri per ridare compattezza, idratazione e luminosità ai tessuti. Zero gonfiori artificiali e ritorno immediato alla vita quotidiana.
+            Trattamenti mirati per sostenere idratazione, elasticità e texture cutanea in sinergia con i percorsi chirurgici o in autonomia.
           </p>
         </div>
 
@@ -519,13 +488,13 @@
   </section>
 
   <!-- =====================================================================
-       SEZIONE FINALE: PROTOCOLLO RISERVATEZZA & APPROCCIO SOFT (3 PILASTRI)
+       SEZIONE FINALE: STANDARD & RISERVATEZZA (3 PILASTRI)
        ===================================================================== -->
   <section class="py-12 sm:py-20 px-5 sm:px-8 max-w-6xl mx-auto border-t border-white/10">
     <div class="text-center max-w-2xl mx-auto mb-12">
-      <span class="text-[11px] uppercase tracking-[0.25em] text-champagne font-semibold">Standard Atelier Milano</span>
+      <span class="text-[11px] uppercase tracking-[0.25em] text-champagne font-semibold">Impostazione Operativa</span>
       <h2 class="font-serif text-3xl sm:text-5xl font-medium text-alabaster mt-2">
-        Protocollo Riservatezza & Approccio Soft
+        Metodo, Recupero & Riservatezza
       </h2>
     </div>
 
@@ -534,10 +503,10 @@
         <div class="w-10 h-10 rounded-2xl bg-champagne/15 border border-champagne/30 flex items-center justify-center text-champagne mb-4">
           <i class="fa-solid fa-feather-pointed"></i>
         </div>
-        <span class="font-mono text-[11px] text-champagne block mb-1">PILASTRO 01</span>
-        <h3 class="font-serif text-2xl text-alabaster mb-2">Naturalezza Garantita</h3>
+        <span class="font-mono text-[11px] text-champagne block mb-1">PUNTO 01</span>
+        <h3 class="font-serif text-2xl text-alabaster mb-2">Proporzione & Misura</h3>
         <p class="text-warmGray text-sm leading-relaxed">
-          Ogni intervento segue la filosofia conservativa: rispettiamo l’anatomia individuale affinché il risultato appaia autentico, armonioso e mai artefatto.
+          Ogni indicazione parte dall’anatomia del viso o del corpo con l’obiettivo di mantenere coerenza espressiva e naturalezza.
         </p>
       </div>
 
@@ -545,57 +514,57 @@
         <div class="w-10 h-10 rounded-2xl bg-champagne/15 border border-champagne/30 flex items-center justify-center text-champagne mb-4">
           <i class="fa-solid fa-bolt"></i>
         </div>
-        <span class="font-mono text-[11px] text-champagne block mb-1">PILASTRO 02</span>
-        <h3 class="font-serif text-2xl text-alabaster mb-2">Recupero Rapido</h3>
+        <span class="font-mono text-[11px] text-champagne block mb-1">PUNTO 02</span>
+        <h3 class="font-serif text-2xl text-alabaster mb-2">Percorso Mobile Snello</h3>
         <p class="text-warmGray text-sm leading-relaxed">
-          Tecniche mini-invasive ed endoscopiche studiate per ridurre al minimo gonfiore e tempi di degenza, consentendo un rientro discreto alla vita sociale.
+          Chi arriva da smartphone trova informazioni essenziali e un passaggio immediato su WhatsApp senza moduli lunghi o dispersioni.
         </p>
       </div>
 
       <div class="luxury-glass rounded-3xl p-6 sm:p-7">
         <div class="w-10 h-10 rounded-2xl bg-champagne/15 border border-champagne/30 flex items-center justify-center text-champagne mb-4">
-          <i class="fa-solid fa-lock"></i>
+          <i class="fa-solid fa-user-shield"></i>
         </div>
-        <span class="font-mono text-[11px] text-champagne block mb-1">PILASTRO 03</span>
-        <h3 class="font-serif text-2xl text-alabaster mb-2">Canale Diretto Crittografato</h3>
+        <span class="font-mono text-[11px] text-champagne block mb-1">PUNTO 03</span>
+        <h3 class="font-serif text-2xl text-alabaster mb-2">Contatto Diretto & Riservatezza</h3>
         <p class="text-warmGray text-sm leading-relaxed">
-          Nessun form web pubblico, nessuna segreteria esterna: dialoghi direttamente su WhatsApp con la nostra Direzione Sanitaria su appuntamento esclusivo.
+          Primo contatto diretto via chat per fissare la visita in studio su appuntamento riservato e valutare il caso in sede medica.
         </p>
       </div>
     </div>
   </section>
 
   <!-- =====================================================================
-       FOOTER DISCRETO PRIVACY & DIREZIONE SANITARIA
+       FOOTER
        ===================================================================== -->
   <footer class="border-t border-white/10 py-12 px-5 sm:px-8 max-w-6xl mx-auto text-center text-xs text-warmGray">
     <p class="font-serif text-lg font-semibold tracking-[0.18em] text-alabaster mb-1">
       ATELIER MILANO · CHIRURGIA PLASTICA CONSERVATIVA
     </p>
-    <p class="mb-3">Quadrilatero della Moda · Milano — Ricevimento esclusivamente su appuntamento riservato</p>
+    <p class="mb-3">Milano — Ricevimento su appuntamento riservato</p>
     <p class="text-[11px] text-warmGray/60">
-      Canale diretto crittografato nel pieno rispetto del segreto professionale medico.
+      Le informazioni presentate hanno finalità illustrativa e non sostituiscono la valutazione clinica specialistica.
     </p>
   </footer>
 
   <!-- =====================================================================
-       BARRA CTA FISSA IN BASSO SU MOBILE (Safe-Area iPhone Ready)
+       BARRA CTA FISSA IN BASSO SU MOBILE
        ===================================================================== -->
-  <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-obsidian/95 backdrop-blur-xl border-t border-champagne/30 px-4 pt-3 sticky-mobile-bar shadow-[0_-10px_30px_rgba(0,0,0,0.85)]">
+  <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-obsidian/95 backdrop-blur-xl border-t border-champagne/30 px-4 pt-2.5 sticky-mobile-bar shadow-[0_-10px_30px_rgba(0,0,0,0.85)]">
     <a
       href="https://wa.me/390200000000?text=Buongiorno%20Atelier%20Milano%2C%20vorrei%20prenotare%20una%20consulenza%20riservata."
       onclick="return handleWhatsAppClick(event, 'Consulenza Riservata WhatsApp', 'Buongiorno Atelier Milano, vorrei prenotare una consulenza riservata.')"
       target="_blank"
       rel="noopener noreferrer"
-      class="w-full bg-waBright active:bg-[#20bd5a] text-obsidian py-3.5 px-4 rounded-2xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg"
+      class="w-full bg-waBright active:bg-[#20bd5a] text-obsidian py-3 px-4 rounded-2xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg"
     >
       <i class="fa-brands fa-whatsapp text-lg shrink-0"></i>
-      <span class="truncate">Consulenza Riservata WhatsApp · Risposta in 15 min</span>
+      <span class="truncate">Consulenza Riservata su WhatsApp</span>
     </a>
   </div>
 
   <!-- =====================================================================
-       MODALE DI ANTEPRIMA FLUSSO 1-TAP (Fallback elegante se wa.me è bloccato)
+       MODALE DI ANTEPRIMA FLUSSO 1-TAP
        ===================================================================== -->
   <div id="wa-preview-modal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
     <div class="luxury-glass max-w-md w-full rounded-3xl p-6 sm:p-7 border border-champagne/45 shadow-2xl">
@@ -610,7 +579,7 @@
       </div>
       <h4 id="modal-service-title" class="font-serif text-2xl text-alabaster mb-2">Blefaroplastica Soft</h4>
       <p class="text-warmGray text-xs mb-4 leading-relaxed">
-        Il paziente viene reindirizzato istantaneamente su WhatsApp con il seguente messaggio profilato già pronto all'invio:
+        Il contatto viene reindirizzato su WhatsApp con questo messaggio già impostato:
       </p>
       <div class="bg-obsidian/90 border border-white/10 rounded-2xl p-4 mb-5 text-xs text-alabaster/95 italic leading-relaxed" id="modal-message-body">
         "Buongiorno Atelier Milano..."
@@ -639,7 +608,7 @@
   </div>
 
   <!-- =====================================================================
-       MOTORE JAVASCRIPT: SCROLLYTELLING UNIDIREZIONALE 60FPS + FALLBACK WA
+       MOTORE JAVASCRIPT: SCROLLYTELLING UNIDIREZIONALE + FALLBACK WA
        ===================================================================== -->
   <script>
     function handleWhatsAppClick(event, serviceTitle, messageText) {
@@ -647,7 +616,6 @@
         const encoded = encodeURIComponent(messageText);
         const targetUrl = `https://wa.me/390200000000?text=${encoded}`;
 
-        // Se siamo dentro un iframe sandbox (es. anteprima editor), mostra il modale interattivo elegante
         if (window.self !== window.top) {
           event.preventDefault();
           const modal = document.getElementById('wa-preview-modal');
@@ -681,7 +649,7 @@
     (function initUnidirectionalBlepharoplastyScroll() {
       const container = document.getElementById('scrolly-container');
       const afterLayer = document.getElementById('after-layer');
-      const divider = document.getElementById('laser-divider');
+      const divider = document.getElementById('divider-line');
       const telemetryStatus = document.getElementById('telemetry-status');
       const telemetryPercent = document.getElementById('telemetry-percent');
       const statusDot = document.getElementById('status-dot');
@@ -710,9 +678,10 @@
 
         if (telemetryStatus && statusDot && bannerTag && bannerDesc && stateBanner) {
           if (clamped < 0.14) {
-            telemetryStatus.textContent = 'ANALISI PERIOCULARE PRE-OP';
+            telemetryStatus.textContent = 'PRE-TRATTAMENTO · AREA PERIOCULARE';
             telemetryStatus.className = 'text-warmGray uppercase truncate';
-            statusDot.className = 'w-2 h-2 rounded-full bg-warmGray/50 shrink-0';
+            statusDot.className = 'w-2 h-2 rounded-full bg-warmGray/60 shrink-0';
+            divider.style.opacity = '1';
 
             stateBanner.style.borderColor = 'rgba(200, 169, 106, 0.25)';
             bannerTag.textContent = 'PRIMA';
@@ -720,17 +689,18 @@
             bannerDesc.textContent = 'PALPEBRA APPESANTITA & BORSA PERIOCULARE';
             bannerDesc.className = 'text-[11px] sm:text-sm font-medium text-alabaster/90 truncate';
           } else if (clamped < 0.96) {
-            telemetryStatus.textContent = 'CALIBRAZIONE SGUARDO SOFT IN CORSO...';
+            telemetryStatus.textContent = 'CONFRONTO IN CORSO · SGUARDO SOFT';
             telemetryStatus.className = 'text-champagneSoft uppercase truncate';
-            statusDot.className = 'w-2 h-2 rounded-full bg-champagne animate-ping shrink-0';
+            statusDot.className = 'w-2 h-2 rounded-full bg-champagne shrink-0';
+            divider.style.opacity = '1';
 
-            stateBanner.style.borderColor = 'rgba(200, 169, 106, 0.50)';
-            bannerTag.textContent = 'SCANSIONE';
+            stateBanner.style.borderColor = 'rgba(200, 169, 106, 0.45)';
+            bannerTag.textContent = 'CONFRONTO';
             bannerTag.className = 'shrink-0 text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-champagne/20 text-champagneSoft';
-            bannerDesc.textContent = 'DISTENSIONE PALPEBRALE & LEVIGATURA CONTORNO...';
+            bannerDesc.textContent = 'DISTENSIONE PALPEBRALE & PROFILO PIÙ PULITO';
             bannerDesc.className = 'text-[11px] sm:text-sm font-medium text-champagneSoft truncate';
           } else {
-            telemetryStatus.textContent = 'DOPO · SGUARDO APERTO E NATURALE';
+            telemetryStatus.textContent = 'DOPO · SGUARDO RIPOSATO E NATURALE';
             telemetryStatus.className = 'text-champagne font-semibold uppercase truncate';
             statusDot.className = 'w-2 h-2 rounded-full bg-waBright shrink-0';
             divider.style.opacity = '0';
@@ -738,16 +708,16 @@
             stateBanner.style.borderColor = 'rgba(200, 169, 106, 0.75)';
             bannerTag.textContent = 'DOPO';
             bannerTag.className = 'shrink-0 text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-champagne text-obsidian';
-            bannerDesc.textContent = 'SGUARDO APERTO E NATURALE · APPROCCIO SOFT';
+            bannerDesc.textContent = 'SGUARDO RIPOSATO E NATURALE · APPROCCIO SOFT';
             bannerDesc.className = 'text-[11px] sm:text-sm font-semibold text-alabaster truncate';
           }
         }
 
         if (scrollCueText) {
           if (clamped >= 0.96) {
-            scrollCueText.innerHTML = '<span class="text-champagne font-semibold">Sguardo Riposato Rivelato · Esplora gli interventi ↓</span>';
+            scrollCueText.innerHTML = '<span class="text-champagne font-semibold">Confronto Completato · Esplora i Percorsi ↓</span>';
           } else {
-            scrollCueText.innerHTML = '<span>Scorri per rivelare lo sguardo riposato</span><span>↓</span>';
+            scrollCueText.innerHTML = '<span>Scorri per vedere il confronto</span><span>↓</span>';
           }
         }
       }
@@ -765,7 +735,6 @@
         const rawProgress = -rect.top / scrollableDistance;
         const clampedScroll = Math.max(0, Math.min(1, rawProgress));
 
-        // Progressione strettamente unidirezionale: avanza solo verso il DOPO
         targetReveal = Math.max(targetReveal, clampedScroll);
 
         if (targetReveal >= 0.995) {
