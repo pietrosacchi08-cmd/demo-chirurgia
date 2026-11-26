@@ -114,7 +114,7 @@
         onclick="return handleWhatsAppClick(event, 'Consulenza Privata Generale', 'Buongiorno Atelier Milano, desidero prenotare una consulenza privata di chirurgia plastica conservativa.')"
         target="_blank"
         rel="noopener noreferrer"
-        class="pointer-events-auto bg-waBright hover:bg-[#20bd5a] text-obsidian px-3.5 sm:px-4 py-2 rounded-full text-xs font-bold tracking-tight flex items-center gap-1.5 shadow-lg transition active:scale-95 shrink-0"
+        class="pointer-events-auto bg-waBright hover:bg-[#20bd5a] text-obsidian px-3.5 sm:px-4 py-2 rounded-full text-xs font-bold tracking-tight hidden sm:flex items-center gap-1.5 shadow-lg transition active:scale-95 shrink-0"
       >
         <i class="fa-brands fa-whatsapp text-sm"></i>
         <span>Consulenza Privata</span>
@@ -123,7 +123,7 @@
   </header>
 
   <!-- =====================================================================
-       HERO SCROLLYTELLING PRIMA / DOPO: BLEFAROPLASTICA SOFT
+       HERO SCROLLYTELLING PRIMA / DOPO: RINOPLASTICA CONSERVATIVA
        ===================================================================== -->
   <section id="scrolly-container" class="relative h-[280vh] w-full bg-obsidian">
     <div class="sticky top-0 h-screen w-full flex flex-col items-center justify-between pt-16 pb-6 sm:py-20 px-4 sm:px-8 overflow-hidden">
@@ -132,10 +132,10 @@
 
       <div class="relative z-20 text-center max-w-2xl mx-auto mt-1">
         <p class="text-[9px] sm:text-xs uppercase tracking-[0.24em] text-champagne font-semibold mb-1">
-          Blefaroplastica Soft · Uomo & Donna · Recupero Rapido
+          Rinoplastica Conservativa · Uomo & Donna · Recupero Rapido
         </p>
         <h1 class="font-serif text-2xl sm:text-4xl md:text-5xl font-medium tracking-tight text-alabaster leading-tight">
-          Blefaroplastica Soft: <span class="italic gold-text font-normal">Sguardo Riposato, Identità Intatta</span>
+          Rinoplastica Conservativa: <span class="italic gold-text font-normal">Profilo Armonico, Identità Intatta</span>
         </h1>
       </div>
 
@@ -144,7 +144,7 @@
         <div class="flex items-center justify-between text-[10px] sm:text-xs font-mono tracking-wider mb-1.5 px-1">
           <div class="flex items-center gap-2 truncate pr-2">
             <span id="status-dot" class="w-2 h-2 rounded-full bg-warmGray/60 shrink-0 transition-colors duration-300"></span>
-            <span id="telemetry-status" class="text-warmGray uppercase truncate">PRE-TRATTAMENTO · AREA PERIOCULARE</span>
+            <span id="telemetry-status" class="text-warmGray uppercase truncate">PRE-TRATTAMENTO · PROFILO NASALE</span>
           </div>
           <span id="telemetry-percent" class="text-champagne font-semibold shrink-0">0%</span>
         </div>
@@ -155,7 +155,7 @@
         >
           <!-- PRIMA -->
           <div class="absolute inset-0 w-full h-full flex items-center justify-center bg-gradient-to-b from-[#141419] via-[#0E0E12] to-[#09090B]">
-            <img src="img/hero-prima.png" alt="Primo piano della zona perioculare prima del trattamento: palpebra superiore appesantita e lieve borsa inferiore" class="w-full h-full object-cover" loading="eager">
+            <img src="img/hero-prima.png" alt="Profilo nasale di profilo prima del trattamento: dorso lievemente pronunciato e punta piena" class="w-full h-full object-cover" loading="eager">
           </div>
 
           <!-- DOPO -->
@@ -164,7 +164,7 @@
             class="absolute inset-0 w-full h-full flex items-center justify-center bg-gradient-to-b from-[#17140E] via-[#100E0B] to-[#09090B]"
             style="clip-path: inset(0 0 0 100%);"
           >
-            <img src="img/hero-dopo.png" alt="Primo piano della zona perioculare dopo il trattamento: sguardo disteso e naturale" class="w-full h-full object-cover" loading="eager">
+            <img src="img/hero-dopo.png" alt="Profilo nasale di profilo dopo il trattamento: dorso disteso e punta armonica" class="w-full h-full object-cover" loading="eager">
           </div>
 
           <!-- DIVISORE CONTINUO -->
@@ -184,7 +184,7 @@
               PRIMA
             </span>
             <span id="banner-desc" class="text-[11px] sm:text-sm font-medium text-alabaster/90 truncate">
-              PALPEBRA APPESANTITA & BORSA PERIOCULARE
+              DORSO NASALE PRONUNCIATO & PUNTA PIENA
             </span>
           </div>
           <span class="shrink-0 font-mono text-[10px] text-champagne uppercase tracking-wider hidden sm:inline">
@@ -198,7 +198,7 @@
             <div id="progress-bar-fill" class="h-full bg-gradient-to-r from-champagne to-champagneSoft w-0 transition-all duration-75"></div>
           </div>
           <div class="flex items-center justify-between mt-1.5 text-[11px] text-warmGray">
-            <span class="font-mono text-[10px] text-champagne/85">SOFT BLEPHAROPLASTY · MILANO</span>
+            <span class="font-mono text-[10px] text-champagne/85">CONSERVATIVE RHINOPLASTY · MILANO</span>
             <span id="scroll-cue-text" class="flex items-center gap-1.5 text-champagneSoft font-medium animate-float-down">
               <span>Scorri per vedere il confronto</span>
               <span>↓</span>
@@ -231,14 +231,14 @@
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5">
         <a
-          href="https://wa.me/390200000000?text=Buongiorno%20Atelier%20Milano%2C%20vorrei%20richiedere%20una%20consulenza%20riservata%20per%20Blefaroplastica%20Soft."
-          onclick="return handleWhatsAppClick(event, 'Blefaroplastica Soft · Consulenza Riservata', 'Buongiorno Atelier Milano, vorrei richiedere una consulenza riservata per Blefaroplastica Soft.')"
+          href="https://wa.me/390200000000?text=Buongiorno%20Atelier%20Milano%2C%20vorrei%20richiedere%20una%20consulenza%20riservata."
+          onclick="return handleWhatsAppClick(event, 'Consulenza Riservata · Atelier Milano', 'Buongiorno Atelier Milano, vorrei richiedere una consulenza riservata.')"
           target="_blank"
           rel="noopener noreferrer"
           class="w-full sm:w-auto bg-waBright hover:bg-[#20bd5a] text-obsidian font-bold py-4 px-8 rounded-2xl text-sm sm:text-base flex items-center justify-center gap-3 shadow-[0_12px_35px_rgba(37,211,102,0.28)] transition active:scale-95"
         >
           <i class="fa-brands fa-whatsapp text-xl"></i>
-          <span>Prenota Valutazione Blefaroplastica (1-Tap)</span>
+          <span>Richiedi una Consulenza Riservata (1-Tap)</span>
         </a>
         <a
           href="#interventi-milano"
@@ -262,7 +262,7 @@
         </h2>
       </div>
       <p class="text-warmGray text-xs sm:text-sm max-w-md">
-        Ogni percorso ha un accesso diretto su WhatsApp in 1-Tap per richiedere informazioni e disponibilità senza moduli dispersivi.
+        Ogni percorso ha un contatto diretto su WhatsApp per chiedere informazioni e disponibilità.
       </p>
     </div>
 
@@ -517,7 +517,7 @@
         <span class="font-mono text-[11px] text-champagne block mb-1">PUNTO 02</span>
         <h3 class="font-serif text-2xl text-alabaster mb-2">Percorso Mobile Snello</h3>
         <p class="text-warmGray text-sm leading-relaxed">
-          Chi arriva da smartphone trova informazioni essenziali e un passaggio immediato su WhatsApp senza moduli lunghi o dispersioni.
+          Dal telefono trovi subito le informazioni essenziali e puoi contattare lo studio direttamente su WhatsApp.
         </p>
       </div>
 
@@ -678,7 +678,7 @@
 
         if (telemetryStatus && statusDot && bannerTag && bannerDesc && stateBanner) {
           if (clamped < 0.14) {
-            telemetryStatus.textContent = 'PRE-TRATTAMENTO · AREA PERIOCULARE';
+            telemetryStatus.textContent = 'PRE-TRATTAMENTO · PROFILO NASALE';
             telemetryStatus.className = 'text-warmGray uppercase truncate';
             statusDot.className = 'w-2 h-2 rounded-full bg-warmGray/60 shrink-0';
             divider.style.opacity = '1';
@@ -686,10 +686,10 @@
             stateBanner.style.borderColor = 'rgba(200, 169, 106, 0.25)';
             bannerTag.textContent = 'PRIMA';
             bannerTag.className = 'shrink-0 text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-white/10 text-alabaster';
-            bannerDesc.textContent = 'PALPEBRA APPESANTITA & BORSA PERIOCULARE';
+            bannerDesc.textContent = 'DORSO NASALE PRONUNCIATO & PUNTA PIENA';
             bannerDesc.className = 'text-[11px] sm:text-sm font-medium text-alabaster/90 truncate';
           } else if (clamped < 0.96) {
-            telemetryStatus.textContent = 'CONFRONTO IN CORSO · SGUARDO SOFT';
+            telemetryStatus.textContent = 'CONFRONTO IN CORSO · RINOPLASTICA SOFT';
             telemetryStatus.className = 'text-champagneSoft uppercase truncate';
             statusDot.className = 'w-2 h-2 rounded-full bg-champagne shrink-0';
             divider.style.opacity = '1';
@@ -697,10 +697,10 @@
             stateBanner.style.borderColor = 'rgba(200, 169, 106, 0.45)';
             bannerTag.textContent = 'CONFRONTO';
             bannerTag.className = 'shrink-0 text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-champagne/20 text-champagneSoft';
-            bannerDesc.textContent = 'DISTENSIONE PALPEBRALE & PROFILO PIÙ PULITO';
+            bannerDesc.textContent = 'DORSO RAFFINATO & PROFILO PIÙ ARMONICO';
             bannerDesc.className = 'text-[11px] sm:text-sm font-medium text-champagneSoft truncate';
           } else {
-            telemetryStatus.textContent = 'DOPO · SGUARDO RIPOSATO E NATURALE';
+            telemetryStatus.textContent = 'DOPO · PROFILO ARMONICO E NATURALE';
             telemetryStatus.className = 'text-champagne font-semibold uppercase truncate';
             statusDot.className = 'w-2 h-2 rounded-full bg-waBright shrink-0';
             divider.style.opacity = '0';
@@ -708,7 +708,7 @@
             stateBanner.style.borderColor = 'rgba(200, 169, 106, 0.75)';
             bannerTag.textContent = 'DOPO';
             bannerTag.className = 'shrink-0 text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-champagne text-obsidian';
-            bannerDesc.textContent = 'SGUARDO RIPOSATO E NATURALE · APPROCCIO SOFT';
+            bannerDesc.textContent = 'PROFILO ARMONICO E NATURALE · APPROCCIO SOFT';
             bannerDesc.className = 'text-[11px] sm:text-sm font-semibold text-alabaster truncate';
           }
         }
